@@ -17,7 +17,9 @@ Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-co
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VogCodeChallenge.Console", "src\VogCodeChallenge.Console\VogCodeChallenge.Console.csproj", "{8ABEC5F3-B616-4D0A-8A36-1F38BA5BBD6E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VogCodeChallenge.Console.Test", "src\VogCodeChallenge.Console.Test\VogCodeChallenge.Console.Test.csproj", "{E61BA176-A103-4D44-AEE7-13726C3EB544}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VogCodeChallenge.Console.Test", "src\VogCodeChallenge.Console.Test\VogCodeChallenge.Console.Test.csproj", "{E61BA176-A103-4D44-AEE7-13726C3EB544}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VogCodeChallenge.AWSLambda", "src\VogCodeChallenge.AWSLambda\VogCodeChallenge.AWSLambda.csproj", "{866F7515-6D00-4C76-B75E-6F42CE679554}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -53,6 +55,10 @@ Global
 		{E61BA176-A103-4D44-AEE7-13726C3EB544}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E61BA176-A103-4D44-AEE7-13726C3EB544}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E61BA176-A103-4D44-AEE7-13726C3EB544}.Release|Any CPU.Build.0 = Release|Any CPU
+		{866F7515-6D00-4C76-B75E-6F42CE679554}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{866F7515-6D00-4C76-B75E-6F42CE679554}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{866F7515-6D00-4C76-B75E-6F42CE679554}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{866F7515-6D00-4C76-B75E-6F42CE679554}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -64,6 +70,7 @@ Global
 		{9EA813B3-2B78-43FE-96FA-7B2693911B13} = {E31CDD25-46F6-4F2B-8442-29E66D982997}
 		{8ABEC5F3-B616-4D0A-8A36-1F38BA5BBD6E} = {E31CDD25-46F6-4F2B-8442-29E66D982997}
 		{E61BA176-A103-4D44-AEE7-13726C3EB544} = {E31CDD25-46F6-4F2B-8442-29E66D982997}
+		{866F7515-6D00-4C76-B75E-6F42CE679554} = {E31CDD25-46F6-4F2B-8442-29E66D982997}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D88ECB93-0CE2-4B83-95D8-C4A8AAA94EA9}
