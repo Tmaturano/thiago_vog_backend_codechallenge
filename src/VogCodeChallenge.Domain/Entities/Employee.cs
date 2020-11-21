@@ -9,6 +9,7 @@ namespace VogCodeChallenge.Domain.Entities
         public string LastName { get; private set; }
         public string JobTitle { get; private set; }
         public string MailingAddress { get; private set; }
+        public Department Department { get; set; }
 
         protected Employee()
         {
