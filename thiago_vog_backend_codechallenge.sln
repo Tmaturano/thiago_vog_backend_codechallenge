@@ -7,6 +7,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{E31CDD25-46F
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VogCodeChallenge.API", "src\VogCodeChallenge.API\VogCodeChallenge.API.csproj", "{5AAC43A6-11BD-47D9-B77C-1F89738E735F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VogCodeChallenge.Domain", "src\VogCodeChallenge.Domain\VogCodeChallenge.Domain.csproj", "{918F3B25-666E-4762-A0DD-26C7B27C5F9C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,12 +19,17 @@ Global
 		{5AAC43A6-11BD-47D9-B77C-1F89738E735F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5AAC43A6-11BD-47D9-B77C-1F89738E735F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5AAC43A6-11BD-47D9-B77C-1F89738E735F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{918F3B25-666E-4762-A0DD-26C7B27C5F9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{918F3B25-666E-4762-A0DD-26C7B27C5F9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{918F3B25-666E-4762-A0DD-26C7B27C5F9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{918F3B25-666E-4762-A0DD-26C7B27C5F9C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{5AAC43A6-11BD-47D9-B77C-1F89738E735F} = {E31CDD25-46F6-4F2B-8442-29E66D982997}
+		{918F3B25-666E-4762-A0DD-26C7B27C5F9C} = {E31CDD25-46F6-4F2B-8442-29E66D982997}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D88ECB93-0CE2-4B83-95D8-C4A8AAA94EA9}
