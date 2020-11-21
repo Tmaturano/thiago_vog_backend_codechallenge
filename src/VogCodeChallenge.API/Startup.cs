@@ -25,7 +25,7 @@ namespace VogCodeChallenge.API
             services.AddDbContext<VogContext>(options =>
                 options.UseInMemoryDatabase("VogDatabase"));
 
-            services.AddControllers();
+            services.AddControllers().AddNewtonsoftJson(x => x.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
             NativeInjectorBootstrapper.RegisterServices(services);
         }
 

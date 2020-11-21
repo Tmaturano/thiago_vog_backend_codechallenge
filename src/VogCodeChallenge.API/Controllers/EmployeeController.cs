@@ -29,7 +29,7 @@ namespace VogCodeChallenge.API.Controllers
             return Ok(employees);
         }
 
-        [HttpGet("/department/{departmentId}")]
+        [HttpGet("department/{departmentId}")]
         public async Task<IActionResult> GetEmployeesByDepartmentId(Guid departmentId)
         {
             if (departmentId == Guid.Empty)
