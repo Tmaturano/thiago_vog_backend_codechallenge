@@ -5,11 +5,13 @@ VisualStudioVersion = 16.0.30717.126
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{E31CDD25-46F6-4F2B-8442-29E66D982997}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VogCodeChallenge.API", "src\VogCodeChallenge.API\VogCodeChallenge.API.csproj", "{5AAC43A6-11BD-47D9-B77C-1F89738E735F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VogCodeChallenge.API", "src\VogCodeChallenge.API\VogCodeChallenge.API.csproj", "{5AAC43A6-11BD-47D9-B77C-1F89738E735F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VogCodeChallenge.Domain", "src\VogCodeChallenge.Domain\VogCodeChallenge.Domain.csproj", "{918F3B25-666E-4762-A0DD-26C7B27C5F9C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VogCodeChallenge.Domain", "src\VogCodeChallenge.Domain\VogCodeChallenge.Domain.csproj", "{918F3B25-666E-4762-A0DD-26C7B27C5F9C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VogCodeChallenge.Infra.Data", "src\VogCodeChallenge.Infra.Data\VogCodeChallenge.Infra.Data.csproj", "{88083ECF-B4B8-4113-BD2A-ECB5A12EE817}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VogCodeChallenge.Infra.Data", "src\VogCodeChallenge.Infra.Data\VogCodeChallenge.Infra.Data.csproj", "{88083ECF-B4B8-4113-BD2A-ECB5A12EE817}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VogCodeChallenge.Infra.CrossCutting.IoC", "src\VogCodeChallenge.Infra.CrossCutting.IoC\VogCodeChallenge.Infra.CrossCutting.IoC.csproj", "{9EA813B3-2B78-43FE-96FA-7B2693911B13}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,6 +31,10 @@ Global
 		{88083ECF-B4B8-4113-BD2A-ECB5A12EE817}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{88083ECF-B4B8-4113-BD2A-ECB5A12EE817}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{88083ECF-B4B8-4113-BD2A-ECB5A12EE817}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9EA813B3-2B78-43FE-96FA-7B2693911B13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EA813B3-2B78-43FE-96FA-7B2693911B13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EA813B3-2B78-43FE-96FA-7B2693911B13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EA813B3-2B78-43FE-96FA-7B2693911B13}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -37,6 +43,7 @@ Global
 		{5AAC43A6-11BD-47D9-B77C-1F89738E735F} = {E31CDD25-46F6-4F2B-8442-29E66D982997}
 		{918F3B25-666E-4762-A0DD-26C7B27C5F9C} = {E31CDD25-46F6-4F2B-8442-29E66D982997}
 		{88083ECF-B4B8-4113-BD2A-ECB5A12EE817} = {E31CDD25-46F6-4F2B-8442-29E66D982997}
+		{9EA813B3-2B78-43FE-96FA-7B2693911B13} = {E31CDD25-46F6-4F2B-8442-29E66D982997}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D88ECB93-0CE2-4B83-95D8-C4A8AAA94EA9}
