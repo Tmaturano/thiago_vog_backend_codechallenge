@@ -2,14 +2,18 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>3aeb9f59-59b9-4a67-b776-ea0f218f583d</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerfileContext>..\..</DockerfileContext>
+    <DockerComposeProjectPath>..\..\docker-compose.dcproj</DockerComposeProjectPath>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="3.1.5" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.10.9" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\VogCodeChallenge.Domain\VogCodeChallenge.Domain.csproj" />
     <ProjectReference Include="..\VogCodeChallenge.Infra.CrossCutting.IoC\VogCodeChallenge.Infra.CrossCutting.IoC.csproj" />
   </ItemGroup>
 

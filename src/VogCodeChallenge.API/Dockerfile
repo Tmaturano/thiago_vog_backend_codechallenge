@@ -1,0 +1,25 @@
+#See https://aka.ms/containerfastmode to understand how Visual Studio uses this Dockerfile to build your images for faster debugging.
+
+FROM mcr.microsoft.com/dotnet/core/aspnet:3.1-buster-slim AS base
+WORKDIR /app
+EXPOSE 80
+EXPOSE 443
+
+FROM mcr.microsoft.com/dotnet/core/sdk:3.1-buster AS build
+WORKDIR /src
+COPY ["src/VogCodeChallenge.API/VogCodeChallenge.API.csproj", "src/VogCodeChallenge.API/"]
+COPY ["src/VogCodeChallenge.Infra.CrossCutting.IoC/VogCodeChallenge.Infra.CrossCutting.IoC.csproj", "src/VogCodeChallenge.Infra.CrossCutting.IoC/"]
+COPY ["src/VogCodeChallenge.Infra.Data/VogCodeChallenge.Infra.Data.csproj", "src/VogCodeChallenge.Infra.Data/"]
+COPY ["src/VogCodeChallenge.Domain/VogCodeChallenge.Domain.csproj", "src/VogCodeChallenge.Domain/"]
+RUN dotnet restore "src/VogCodeChallenge.API/VogCodeChallenge.API.csproj"
+COPY . .
+WORKDIR "/src/src/VogCodeChallenge.API"
+RUN dotnet build "VogCodeChallenge.API.csproj" -c Release -o /app/build
+
+FROM build AS publish
+RUN dotnet publish "VogCodeChallenge.API.csproj" -c Release -o /app/publish
+
+FROM base AS final
+WORKDIR /app
+COPY --from=publish /app/publish .
+ENTRYPOINT ["dotnet", "VogCodeChallenge.API.dll"]
