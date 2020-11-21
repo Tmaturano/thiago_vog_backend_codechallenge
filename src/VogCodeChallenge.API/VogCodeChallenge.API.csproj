@@ -9,6 +9,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\VogCodeChallenge.Domain\VogCodeChallenge.Domain.csproj" />
     <ProjectReference Include="..\VogCodeChallenge.Infra.CrossCutting.IoC\VogCodeChallenge.Infra.CrossCutting.IoC.csproj" />
   </ItemGroup>
 
