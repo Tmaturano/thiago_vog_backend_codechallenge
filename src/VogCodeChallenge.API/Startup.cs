@@ -6,6 +6,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using VogCodeChallenge.Infra.CrossCutting.IoC;
 using VogCodeChallenge.Infra.Data.Context;
+using VogCodeChallenge.Infra.Data.Extensions;
 
 namespace VogCodeChallenge.API
 {
@@ -29,11 +30,12 @@ namespace VogCodeChallenge.API
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, VogContext vogContext)
         {
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+                vogContext.EnsureSeedDataForContext();
             }
 
             app.UseHttpsRedirection();

@@ -17,7 +17,7 @@ namespace VogCodeChallenge.Infra.Data.Repositories
 
         public async Task<IEnumerable<Department>> GetEmployeesByDepartmentIdAsync(Guid departmentId)
         {
-            return await DbSet.Where(d => d.Id == departmentId).ToListAsync();
+            return await DbSet.Where(d => d.Id == departmentId).Include(e => e.Employees).AsNoTracking().ToListAsync();
         }
     }
 }
