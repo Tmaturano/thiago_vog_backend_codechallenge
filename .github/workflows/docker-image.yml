@@ -26,7 +26,7 @@ jobs:
 
     - name: Image Build
       run: |
-        cd ./src/src/VogCodeChallenge.API
+        cd ./src/VogCodeChallenge.API
         docker build . --file Dockerfile --tag ${{ env.IMAGEM_DOCKERHUB }}:latest
         docker tag ${{ env.IMAGEM_DOCKERHUB }}:latest ${{ env.IMAGEM_DOCKERHUB }}:$GITHUB_RUN_NUMBER
         docker push ${{ env.IMAGEM_DOCKERHUB }}       
