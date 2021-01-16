@@ -1,4 +1,4 @@
-name: Docker Hub + Azure Web App
+name: Docker Hub Publish
 
 on:
   push:
@@ -26,7 +26,7 @@ jobs:
 
     - name: Image Build
       run: |
-        cd ./src/VogCodeChallenge.API
+        cd ./VogCodeChallenge.API
         docker build . --file Dockerfile --tag ${{ env.IMAGEM_DOCKERHUB }}:latest
         docker tag ${{ env.IMAGEM_DOCKERHUB }}:latest ${{ env.IMAGEM_DOCKERHUB }}:$GITHUB_RUN_NUMBER
         docker push ${{ env.IMAGEM_DOCKERHUB }}       
