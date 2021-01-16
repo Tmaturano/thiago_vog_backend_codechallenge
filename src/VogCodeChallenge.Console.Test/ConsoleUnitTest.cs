@@ -38,15 +38,6 @@ namespace VogCodeChallenge.Console.Test
         }
 
         [Theory]
-        [InlineData(-1)]
-        [InlineData(0)]
-        public void TESTModule_WhenIntegerIsBelowThan1_ShouldThrownArgumentException(int value)
-        {
-            // Act & assert
-            Assert.Throws<ArgumentException>(QuestionClass.TESTModule(value));
-        }
-
-        [Theory]
         [InlineData(1)]
         [InlineData(2)]
         public void TESTModule_WhenFloatIs1_2_ShouldReturn3(float value)
